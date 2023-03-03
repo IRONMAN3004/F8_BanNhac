@@ -1,0 +1,16 @@
+/* Break poin */
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (max-width: 767px) {
+    .nav {}
+    .nav li {
+        display: block;
+    }
+    .bar-btn {
+        display: block;
+        color: white;
+    }
+}

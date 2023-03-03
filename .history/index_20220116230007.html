@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="height=device-height, 
+    width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jordan</title>
+    <link rel="icon" href="data:image/png;base64,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"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="headerr" class="header">
+            <ul class="nav">
+                <li>
+                    <a href="">HOME</a>
+                </li>
+                <li>
+                    <a href="">BAND</a>
+                </li>
+                <li>
+                    <a href="#tour">TOUR</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+                <li>
+                    <a href="">MORE</a>
+                    <ul class="nav__dropdown">
+                        <li>
+                            <a href="">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="">Google</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end nav -->
+            <!-- btn__search -->
+            <!-- <div class="search-btn">
+                <i class="fas fa-search"></i>
+            </div> -->
+
+            <div id="barbtn" class="bar-btn">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+
+        </div>
+
+        <div class="slider">
+            <div class="text-content">
+                <h3 class="text-heading">Hà Nội</h3>
+                <div class="text-description">Là thủ đô của nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="content-section">
+                <h2 class="section-heading">VIỆT NAM</h2>
+
+                <p class="section-sub-heading">I love Việt Nam</p>
+
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <div class="member-list row row-mo">
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+
+                    <div class="member-item colba text-align">
+                        <p class="member-name">Name</p>
+                        <img src="/assets/img/band/bandr.jpg" alt="" class="menber-img">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Tour section -->
+            <div class="tour-section" id="tour">
+                <div class="content-section content-section__color ">
+                    <h2 class="section-heading .text__white">Mixi City</h2>
+                    <p class="section-sub-heading .text__white">I love you Thanh Hóa</p>
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <!-- places -->
+                    <div class="places-list row">
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/1_newyork.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket ">Buy</buttom>
+                            </div>
+                        </div>
+
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/2_paris.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket">Buy</buttom>
+                            </div>
+                        </div>
+
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/3__sanfran.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket">Buy</buttom>
+                            </div>
+                        </div>
+
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/1_newyork.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket ">Buy</buttom>
+                            </div>
+                        </div>
+
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/2_paris.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket">Buy</buttom>
+                            </div>
+                        </div>
+
+                        <div class="place-item col colba">
+                            <img src="/assets/img/tour/3__sanfran.jpg" alt="New york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New Yorrk</h3>
+                                <p class="place-time">Fri 27 now 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <buttom class="place-buy-tn js-buy-ticket">Buy</buttom>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--begin Contact section -->
+                <div class="content-section">
+                    <h2 class="section-heading">From MIXI WIDTH LOVE</h2>
+                    <p class="section-sub-heading">I love Việt Nam</p>
+
+                    <div class="row contact-content">
+
+                        <div class=" col colhai contact-info">
+                            <p>
+
+                                <ion-icon name="location-outline"></ion-icon> Thanh hóa, 124 vi
+                            </p>
+                            <p>
+                                <ion-icon name="call-outline"></ion-icon> Phone: 0843193130
+                            </p>
+                            <p>
+                                <ion-icon name="mail-outline"></ion-icon> Email: trapboy.com
+                            </p>
+                        </div>
+
+                        <div class=" col colhai contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col colhai">
+                                        <input type="text" required class="input-contact" placeholder="Name là...">
+                                    </div>
+
+                                    <div class="col colhai">
+                                        <input type="email" required class="input-contact" placeholder="Email là... ">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col a col-full ">
+                                        <input type="text" required class="input-contact chieucao" placeholder="Message là...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--end Contact section -->
+                <div class="map-section">
+                    <img class="map-section__img" src="/assets/img/map.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="socials-list">
+                    <a href="#">
+                        <ion-icon name="accessibility-outline"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="airplane-outline"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+                <p class="coppyright">Trapboy.info.com</p>
+            </div>
+
+            <div class="modal js-modal ">
+                <div class="modal-container">
+                    <header class="modal-header">
+                        <i class="fab fa-accusoft"></i> Ticket
+                    </header>
+
+                    <div class="modal__body">
+                        <label for="input1" class="modal-label">
+                        <i class="fab fa-affiliatetheme"></i>Tickets,15 per person
+                    </label>
+                        <input type="text" id="input1" class=" modal-input " placeholder="Nhập chữ vào đi ">
+
+                        <label for="input1" class="modal-label">
+                        <i class="far fa-angry"></i>Send To
+                    </label>
+                        <input type="text" id="input1" class=" modal-input " placeholder="Nhập chữ vào đi ">
+                        <button class="modal-btn">PAY</button>
+                    </div>
+
+                    <div class="modal__footer ">
+                        <p class="modal-help">Need
+                            <a href="#">ME</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            const buyBtns = document.querySelectorAll('.js-buy-ticket')
+            const modal = document.querySelector('.js-modal')
+
+            function showBuyTicket() {
+
+                modal.classList.add('open')
+
+            }
+            for (const buyBtn of buyBtns) {
+                buyBtn.addEventListener('click', showBuyTicket)
+            }
+        </script>
+
+        <script>
+            var header = document.getElementById('headerr');
+            // console.log(header);
+            var bar = document.getElementById('barbtn');
+            // console.log(bar);
+            var headerHeight = header.clientHeight;
+            bar.onclick = function() {
+                var isClose = header.clientHeight === headerHeight;
+                if (isClose) {
+                    header.style.height = 'auto';
+                } else {
+                    header.style.height = null;
+                }
+            }
+        </script>
+</body>
+
+</html>

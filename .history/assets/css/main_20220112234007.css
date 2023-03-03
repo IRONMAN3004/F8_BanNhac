@@ -1,0 +1,452 @@
+        /* reset css ctl+D alt...ctlr+shift+L....shift +right */
+        /* 
+từ ngoài vào trong
+Từ trên xuống dưới 
+tổng quan chi tiết 
+*/
+        /* 
+1.Vị trí 
+2. Kích thước 
+3. Màu sắc
+4. Kiểu dáng(Kiểu chữ , hình tròn vuông......)
+*/
+        /* come on*/
+        
+        .row {
+            display: flex;
+            margin-left: -8px;
+            margin-right: -8px;
+            flex-wrap: wrap;
+        }
+        
+        .col {
+            padding: 4px 8px;
+        }
+        
+        .colba {
+            width: calc(100% /3);
+        }
+        
+        .col-full {
+            width: 100%;
+        }
+        
+        .colhaft {
+            width: 50%;
+        }
+        
+        .colhai {
+            width: calc(100% / 2);
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .text-align {
+            text-align: center !important;
+        }
+        
+        .text__white {
+            color: white !important;
+        }
+        
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .header {
+            height: 46px;
+            background-color: #1e1f1c;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        .nav {
+            display: inline-block;
+        }
+        
+        .nav li {
+            display: inline-block;
+        }
+        
+        .nav>li>a {
+            color: white;
+        }
+        
+        .nav li a {
+            color: rgb(206, 139, 139);
+            text-decoration: none;
+            line-height: 46px;
+            padding: 0 24px;
+            display: block;
+        }
+        
+        .nav>li:hover>a,
+        .nav .nav__dropdown li:hover {
+            background-color: rgb(236, 230, 174);
+        }
+        
+        .nav .nav__dropdown {
+            position: absolute;
+            min-width: 160px;
+            background-color: rgb(20, 20, 20);
+            display: none;
+        }
+        
+        .nav .nav__dropdown a {
+            color: rgb(243, 151, 151);
+        }
+        
+        .nav__dropdown li {
+            position: relative;
+            display: block;
+        }
+        
+        .nav__dropdown li a {
+            display: block;
+            padding: 0 15px;
+            line-height: 38px;
+        }
+        
+        .nav li:hover .nav__dropdown {
+            display: block;
+        }
+        
+        .header .search-btn {
+            font-size: 14px;
+            float: right;
+            width: 46px;
+            height: 46px;
+        }
+        
+        .slider {
+            position: relative;
+            margin-top: 46px;
+            padding-top: 50%;
+            background: url('/assets/img/3369517.jpg') top center /cover no-repeat;
+        }
+        
+        .text-content {
+            color: white;
+            position: absolute;
+            top: 80%;
+            /* left: 50%; */
+            /* transform: translateX(-50%); 
+hoặc dùng width:100% để text-align:center đạt hiệu quả*/
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .text-heading {
+            font-weight: bold;
+            font-size: 23px;
+        }
+        
+        .text-description {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .content .content-section {
+            width: 800px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 64px 0;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        
+        .content-section__color {
+            background-color: rgb(223, 186, 186);
+        }
+        
+        .content .section-heading {
+            font-size: 30px;
+            letter-spacing: 10px;
+        }
+        
+        .content .section-sub-heading {
+            font-size: 16px;
+            font-style: italic;
+            opacity: 0.5;
+        }
+        
+        .content .section-heading,
+        .content .section-sub-heading {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .content .about-text {
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .content .member-list {
+            padding: 32px 0px;
+            /* display: flex; */
+        }
+        /*     
+    .member-item {
+        width: calc(100% / 3);
+        text-align: center;
+    }
+     */
+        
+        .member-name {
+            font-size: 15px;
+            margin: 15px 0px;
+        }
+        
+        .menber-img {
+            margin-bottom: 15px;
+            max-width: 154px;
+            margin: 0 auto;
+            /* transform: translateX(calc(100% / 2)); */
+            border-radius: 10px;
+        }
+        
+        .tour-section {
+            background-color: cadetblue;
+        }
+        
+        .tickets-list {
+            background-color: white;
+            list-style-type: none;
+            margin-top: 40px;
+        }
+        
+        .tickets-list li {
+            font-size: 15px;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgb(167, 58, 58);
+        }
+        
+        .tickets-list li:last-child {
+            border: none;
+        }
+        
+        .sold-out {
+            color: white;
+            background-color: red;
+            padding: 1px 5px;
+            margin-left: 16px;
+        }
+        
+        .tickets-list .quantity {
+            float: right;
+            width: 24px;
+            height: 24px;
+            color: white;
+            border-radius: 30px;
+            background-color: coral;
+            text-align: center;
+            line-height: 24px;
+            transform: translateY(-15%);
+        }
+        
+        .places-list {
+            padding-top: 32px;
+            padding-bottom: 46px;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* khi thêm nhiều place-item */
+        }
+        /* .place-item {
+        width: calc(100% / 3);
+    } */
+        /* .place-item:last-child {
+    padding-right: 0px;
+} */
+        
+        .place-img {
+            width: 100%;
+            height: 50%;
+            display: block;
+            /* do thẻ img là inline và nó nằm cạnh 1 thẻ black nene nó tạo ra 1 khoảng trống nên phải dùng lại display:black; */
+        }
+        
+        .place-img:hover {
+            opacity: 0.7;
+        }
+        
+        .place-body {
+            padding: 16px;
+            background-color: white;
+            font-size: 15px;
+            /* do font-size nó có thể kế thừa đưuojc nên cho luôn vào thẻ cha của 3 thẻ kia là thẻ body */
+        }
+        
+        .place-heading {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        .place-time {
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+        
+        .place-desc {
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+        
+        .place-buy-tn {
+            margin-top: 15px;
+            padding: 8px 34px;
+            background-color: rgb(27, 26, 26);
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(56, 53, 52, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            display: none;
+        }
+        
+        .open {
+            display: flex;
+        }
+        
+        .modal-container {
+            width: 900px;
+            max-width: calc(100%-30px);
+            background-color: white;
+            min-height: 250px;
+            position: relative;
+            border-radius: 20px;
+        }
+        
+        .modal-header {
+            height: 130px;
+            background-color: cadetblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .modal__body {
+            padding: 0 16px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .modal-label {
+            /* display: block; */
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .modal-input {
+            padding: 5px;
+            /* width: 100%; */
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        
+        .modal-btn {
+            margin-top: 20px;
+            background-color: cadetblue;
+            border: none;
+            color: white;
+            font-size: 15px;
+            padding: 18px;
+            /* width: 100% */
+        }
+        
+        .modal-btn:hover {
+            opacity: 0.8;
+        }
+        
+        .modal__footer {
+            margin: 10px 16px;
+            text-align: right;
+        }
+        
+        .modal-help a {
+            color: red;
+        }
+        /* contact */
+        
+        .contact-content {
+            margin-top: 48px;
+        }
+        
+        .contact-info {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        .contact-form {
+            font-size: 14px;
+        }
+        
+        ion-icon {
+            width: 30px;
+            display: inline-block;
+        }
+        
+        .input-contact {
+            padding: 10px;
+            border-radius: 3px;
+            width: 100%;
+        }
+        
+        .map-section__img {
+            width: 100%;
+        }
+        
+        .footer {
+            padding: 64px 16px;
+            text-align: center;
+        }
+        
+        .socials-list {
+            font-size: 20px;
+        }
+        
+        .socials-list a {
+            text-decoration: none;
+            color: chocolate;
+        }
+        
+        .coppyright {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .bar-btn {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            color: brown;
+            padding: 30px;
+            z-index: 3;
+            font-size: 25px;
+        }

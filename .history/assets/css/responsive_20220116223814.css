@@ -1,0 +1,44 @@
+/* Break poin */
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (max-width: 767px) {
+    .bar-btn {
+        display: block;
+        color: white;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .nav {
+        display: block;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav li:first-child {
+        display: inline-block;
+    }
+    .nav .nav__dropdown {
+        position: initial;
+        min-width: 160px;
+        background-color: rgb(37, 31, 31);
+    }
+    .nav__dropdown li a {
+        display: block;
+        padding: 0 50px;
+        line-height: 38px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .colba {
+        width: 100%;
+    }
+    .menber-img {
+        width: 100%;
+    }
+}

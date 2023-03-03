@@ -1,0 +1,30 @@
+/* Break poin */
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (max-width: 767px) {
+    .nav {
+        display: block;
+    }
+    .nav li {
+        display: block;
+    }
+    .nav li:first-child {
+        display: inline-block;
+    }
+    .bar-btn {
+        display: block;
+        color: white;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .nav .nav__dropdown {
+        /* position: absolute; */
+        min-width: 160px;
+        background-color: rgb(20, 20, 20);
+        display: none;
+    }
+}
